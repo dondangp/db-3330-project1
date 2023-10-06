@@ -1,1 +1,2 @@
-# db-3330-project1
+Installation Guide:
+Download MySQL here: https://www.mysql.com/downloads/
