@@ -20,7 +20,8 @@ Any stops made by a train before its destination and their bookings are not cons
 
 # Installation Guide
 Download MySQL [here](https://www.mysql.com/downloads/)  
-Download MySQL Workbench [here] (https://www.mysql.com/products/workbench/)    
-Download Visual Studio Code: [here] (https://code.visualstudio.com/download)    
-Language Extension: Download the  extensions on VSCode (mssql, MySQL, SQLTools, vscode-database)  
+Download MySQL Workbench [here](https://www.mysql.com/products/workbench/)  
+Download Visual Studio Code [here](https://code.visualstudio.com/download)  
+Language Extension: Download the extensions on VSCode (mssql, MySQL, SQLTools, vscode-database)  
+
 
