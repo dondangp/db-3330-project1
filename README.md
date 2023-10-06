@@ -19,9 +19,9 @@ Total Number of trains are 5
 Any stops made by a train before its destination and their bookings are not considered.
 
 # Installation Guide
-Download MySQL [here](https://www.mysql.com/downloads/)  
-Download MySQL Workbench [here]([https://www.mysql.com/downloads/](https://www.mysql.com/products/workbench/))  
-Download Visual Studio Code [here]([https://www.mysql.com/downloads/](https://code.visualstudio.com/download))  
-Language Extension: Download the extensions on VSCode (mssql, MySQL, SQLTools, vscode-database)  
+- Download [MySQL](https://www.mysql.com/downloads/) here  
+- Download [MySQL Workbench](https://www.mysql.com/products/workbench/) here  
+- Download [Visual Studio Code](https://code.visualstudio.com/download) here  
+- Language Extension: Download the extensions on [VSCode](https://code.visualstudio.com/) (mssql, MySQL, SQLTools, vscode-database) here  
 
 
