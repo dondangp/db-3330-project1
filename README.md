@@ -1,4 +1,4 @@
-# Assignment Details
+# Assignment Details 
 You are hired by a Railway Company, you are asked to design a system which provides information to passengers about the trains available on the bases of source and destination, other information like status of the train, status of passenger ticket, how many seats are available etc.
 
 Suppose you are given the following requirements for a simple database for the Railway Reservation System:
@@ -19,5 +19,8 @@ Total Number of trains are 5
 Any stops made by a train before its destination and their bookings are not considered.
 
 # Installation Guide
-
 Download MySQL [here](https://www.mysql.com/downloads/).
+Download MySQL Workbench [here] (https://www.mysql.com/products/workbench/).
+Download Visual Studio Code: [here] (https://code.visualstudio.com/download).
+Language Extension: Download the  extensions on VSCode (mssql, MySQL, SQLTools, vscode-database)
+
