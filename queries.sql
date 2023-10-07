@@ -1,16 +1,16 @@
 /*Query #2*/
-SELECT FirstName,LastName,t.TrainNumber, t.TrainName FROM Passenger as p
+SELECT FirstName,LastName,t.TrainName FROM Passenger as p
     JOIN Booked b ON p.SSN = b.Passenger_SSN
     JOIN Train t ON b.TrainNumber = t.TrainNumber
-    Where p.FirstName = 'James' AND p.LastName = 'Butt' AND t.TrainNumber;
+    Where p.FirstName = 'Minna' AND p.LastName = 'Amigon' AND t.TrainNumber;
 
 /*Query #3*/
-SELECT p.FirstName, p.LastName, ts.TrainDate
+SELECT p.FirstName, p.LastName
 FROM Passenger p
 JOIN Booked b ON p.SSN = b.Passenger_SSN
 JOIN Train t ON b.TrainNumber = t.TrainNumber
 JOIN TrainStatus ts ON TRIM(t.TrainName) = TRIM(ts.TrainName)
-WHERE b.Status = 'Booked' AND TRIM(ts.TrainDate) = 'Tuesday';
+WHERE b.Status = 'Booked' AND TRIM(ts.TrainDate) = 'Saturday';
 
 /*Query #4*/
 
@@ -25,9 +25,7 @@ FROM Passenger p
 JOIN Booked b ON p.SSN = b.Passenger_SSN
 JOIN Train t ON b.TrainNumber = t.TrainNumber
 JOIN TrainStatus ts ON TRIM(t.TrainName) = TRIM(ts.TrainName)
-WHERE b.Status = 'Booked' 
-GROUP BY t.TrainName, ts.TrainDate
-ORDER BY t.TrainName, ts.TrainDate;
+TRIM(t.TrainName) = 'Golden Arrow'
 
 /*Query #6*/
 SELECT p.FirstName, p.LastName
@@ -36,25 +34,24 @@ JOIN Booked b ON p.SSN = b.Passenger_SSN
 JOIN Train t ON b.TrainNumber = t.TrainNumber
 WHERE b.Status = 'Booked' AND TRIM(t.TrainName) = 'Golden Arrow';
 /*Query #7*/
-SELECT DISTINCT p.FirstName, p.LastName
+SELECT p.FirstName, p.LastName, b.Status, t.TrainName
 FROM Passenger p
 JOIN Booked b ON p.SSN = b.Passenger_SSN
-JOIN Train t ON b.TrainNumber = t.TrainNumber 
-JOIN TrainStatus ts ON TRIM(t.TrainName) = TRIM(ts.TrainName)
-WHERE b.Status = 'Booked' AND strftime('%w', ts.TrainDate) = '4'
-ORDER BY p.LastName ASC, p.FirstName ASC;
+JOIN Train t ON b.TrainNumber = t.TrainNumber
+WHERE b.Status = 'WaitL';
+
 
 /*Query #8*/
 SELECT FirstName, LastName
 FROM Passenger
 WHERE Phone2 LIKE '605%'
-ORDER BY LastName DESC, FirstName DESC;
+ORDER BY FirstName DESC;
 
 /*Query #9*/
 SELECT DISTINCT p.FirstName, p.LastName
 FROM Passenger p
-JOIN Booked b ON p.Passenger_SSN = b.Passenger_SSN
-JOIN Train t ON b.Train_Number = t.TrainNumber 
+JOIN Booked b ON p.SSN = b.Passenger_SSN
+JOIN Train t ON b.TrainNumber = t.TrainNumber 
 JOIN TrainStatus ts ON TRIM(t.TrainName) = TRIM(ts.TrainName)
-WHERE b.Status = 'Booked' AND strftime('%w', ts.TrainDate) = '4'
-ORDER BY p.LastName ASC, p.FirstName ASC;
+WHERE b.Status = 'Booked' AND ts.TrainDate = 'Thursday'
+ORDER BY p.FirstName ASC;
