@@ -19,7 +19,7 @@ Total Number of trains are 5
 Any stops made by a train before its destination and their bookings are not considered.
 
 # Installation Guide
-- Download [SQLite](https://code.visualstudio.com/download](https://www.sqlite.org/download.html) here  
+- Download SQLite https://code.visualstudio.com/download](https://www.sqlite.org/download.html here  
 - Download [Visual Studio Code](https://code.visualstudio.com/download) here  
 - Language Extension: Download the extensions on [VSCode](https://code.visualstudio.com/) (mssql, SQLTools, vscode-database) here  
 
